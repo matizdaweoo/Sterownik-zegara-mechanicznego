@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="icon" href="data:,">
+		<title>Zegar - Ustawianie godziny</title>
+		<style>
+			html    { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}
+			h2      { font-size: 30px; text-decoration: underline double #4CAF50;}
+			h3   	 { font-size: 40px; margin: 10px;}
+			.button { width: 70px; height: 40px; background-color: #4CAF50; border: none; color: white;
+					text-decoration: none; font-size: 15px; margin: 2px; cursor: pointer;}
+			.buttonSet { width: 40px; height: 40px; background-color: #4CAF50; border: none; color: white;
+					text-decoration: none; font-size: 15px; margin: 2px; cursor: pointer;}
+			span	{ color: #606060; width: 70px; height: 40px;}
+			table, th, td {border: 0px solid black; border-collapse: collapse; padding: 0px 10px;}
+		</style>
+	</head>
+   
+	<body> <h2>ZEGAR MECHANICZNY</h2>
+		<p></p>
+		<p style="color: red;"><b>Procedura ustawiania godziny:</b></p>
+		
+		<p><b style="color: red;">1.</b> Reset zegara do godziny 12:00</p>
+		<p style="padding: 0px 5px;"><b>(Wskazanie referencyjne).</b></p>
+		<p><br></p>
+		<p style="font-size: 10px"><b>2. Przerwa 10 sekund.</b></p>
+		<p></p>
+		<p><b>3. Ustawienie właściwej godziny.</b></p>
+		<p><br></p>
+		<p style="color: red;"><b>Jeśli procedura ustawiania godziny została zakończona, kliknij przycisk 'OK'.</b></p>
+		<p><br></p>
+		
+		<form action="/U" method="post">
+			<input type="submit" value="OK" class="button" style="width: 100px;">
+		</form>
+	</body>
+</html>

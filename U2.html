@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="icon" href="data:,">
+		<title>Zegar - Ustaw datę</title>
+		<style>
+			html    { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}
+			h2      { font-size: 30px; text-decoration: underline double #4CAF50;}
+			h3   	{ font-size: 40px; margin: 10px;}
+			.button { width: 70px; height: 40px; background-color: #4CAF50; border: none; color: white;
+					text-decoration: none; font-size: 15px; margin: 2px; cursor: pointer;}
+			table, th, td {border: 0px solid black; border-collapse: collapse; padding: 10px 10px;}
+		</style>
+	</head>
+   
+	<body> <h2>ZEGAR MECHANICZNY</h2>
+		<p></p>
+		<table align=center>
+			<tr>
+				<td align=center colspan="5"><b>Ustaw datę</b></td>
+			</tr>
+			<tr>
+				<td align=center colspan="5"><h3>10.11.2019</h3></td>
+			</tr>
+			<tr>
+				<td>
+					<table style="border: 2px solid black;">
+						<tr>
+							<td>
+								<form action="/U2Du" method="post">
+									<input type="submit" value="&#x25B2;" class="button" style="width: 40px;">
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="/U2Dd" method="post">
+									<input type="submit" value="&#x25BC;" class="button" style="width: 40px;">
+								</form>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td style="width: 10px;"></td>
+				<td>
+					<table style="border: 2px solid black;">
+						<tr>
+							<td>
+								<form action="/U2Mu" method="post">
+									<input type="submit" value="&#x25B2;" class="button" style="width: 40px;">
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="/U2Md" method="post">
+									<input type="submit" value="&#x25BC;" class="button" style="width: 40px;">
+								</form>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td style="width: 10px;"></td>
+				<td>
+					<table style="border: 2px solid black;">
+						<tr>
+							<td>
+								<form action="/U2Yu" method="post">
+									<input type="submit" value="&#x25B2;" class="button" style="width: 40px;">
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="/U2Yd" method="post">
+									<input type="submit" value="&#x25BC;" class="button" style="width: 40px;">
+								</form>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<p></p>
+		<table align=center>
+			<tr>
+				<td>
+					<form action="/U1Ok" method="post">
+						<input type="submit" value="OK" class="button" style="width: 100px;">
+					</form>
+				</td>
+				<td style="width: 40px;"></td>
+				<td>
+					<form action="/U" method="post">
+						<input type="submit" value="Anuluj" class="button" style="width: 100px;">
+					</form>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="icon" href="data:,">
+		<title>Zegar - Reset zegara</title>
+		<style>
+			html    { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}
+			h2      { font-size: 30px; text-decoration: underline double #4CAF50;}
+			h3   	 { font-size: 40px; margin: 10px;}
+			.button { width: 70px; height: 40px; background-color: #4CAF50; border: none; color: white;
+					text-decoration: none; font-size: 15px; margin: 2px; cursor: pointer;}
+			.buttonSet { width: 40px; height: 40px; background-color: #4CAF50; border: none; color: white;
+					text-decoration: none; font-size: 15px; margin: 2px; cursor: pointer;}
+			table, th, td {border: 0px solid black; border-collapse: collapse; padding: 10px 10px;}
+		</style>
+	</head>
+   
+	<body> <h2>ZEGAR MECHANICZNY</h2>
+		<p></p>
+		<p><b>Trwa reset zegara mechanicznego.</b></p>
+		<p></p>
+		<h3 style="color: orange;"><b>CZEKAJ!</b></h3>
+
+		<p><br></p>
+		
+		<form action="/U" method="post">
+			<input type="submit" value="Anuluj" class="button" style="width: 100px; height: 40px;">
+		</form>
+	</body>
+</html>

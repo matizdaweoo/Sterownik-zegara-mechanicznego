@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=\"UTF-8\" name=\"viewport\" content=\"width=device-width, initial-scale=0.5\">
+		<link rel=\"icon\" href=\"data:,\">
+		<title>Zegar - Diagnostyka</title>
+		<style>
+			html 		 { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}
+			h2   		 { font-size: 30px; text-decoration: underline double #4CAF50;}
+			h3      	 { font-size: 20px; margin: 10px;}
+			.button		 { width: 200px; height: 40px; background-color: #4CAF50; border: none; color: white;
+						   text-decoration: none; font-size: 15px; margin: 2px; cursor: pointer; }
+			.buttonClear { width: 80px; height: 15px; background-color: #4CAF50; border: none; color: white; padding: 1px 1px;
+					       text-decoration: none; font-size: 10px; margin: 0px; cursor: pointer; }
+			table, th, td {border-collapse: collapse; padding: 3px 10px;}
+		</style>
+	</head>
+	
+	<body><h2>ZEGAR MECHANICZNY</h2>
+		<table align=center>
+			<tr>
+				<td align=center colspan="4"><b>Diagnostyka</b></td>
+			</tr>
+			<tr>
+				<td align=left valign=middle style="border: 2px solid black;">Czas aktualny:</td>
+				<td colspan="3" style="border: 2px solid black;">12:34</td>
+			</tr>
+			<tr>
+				<td align=left valign=middle style="border: 2px solid black;">Czas zegara:</td>
+				<td colspan="3" style="border: 2px solid black;">12:36</td>
+			</tr>
+			<tr>
+				<td align=left valign=middle style="border: 2px solid black;">Różnica czasu:</td>
+				<td colspan="3" style="border: 2px solid black;">+2 minuty</td>
+			</tr>
+			<tr>
+				<td align=left valign=middle style="border: 2px solid black;">Temperatura:</td>
+				<td style="border: 2px solid black;">aktualna</td>
+				<td style="border: 2px solid black;">min</td>
+				<td style="border: 2px solid black;">max</td>
+			</tr>
+			<tr>
+				<td align=left valign=middle style="border: 2px solid black;">Silnik:</td>
+				<td style="border: 2px solid black;">34.40 &#x2103;</td>
+				<td style="border: 2px solid black;">84.40 &#x2103;</td>
+				<td style="border: 2px solid black;">4.40 &#x2103;</td>
+			</tr>
+			<tr>
+				<td align=left valign=middle style="border: 2px solid black;">Sterownik:</td>
+				<td style="border: 2px solid black;">25.60 &#x2103;</td>
+				<td style="border: 2px solid black;">65.60 &#x2103;</td>
+				<td style="border: 2px solid black;">5.60 &#x2103;</td>
+			</tr>
+			<tr>
+				<td align=center colspan="2"></td>
+				<td align=center colspan="2" style="border: 2px solid black;">
+					<form action="/Dc" method="post">
+						<input type="submit" value="Reset min/max" class="buttonClear">
+					</form>
+				</td>
+			</tr>
+		</table>
+		<p></p>
+		<form action="/L" method="post">
+			<input type="submit" value="Powrót" class="button" style="width: 100px;">
+		</form>
+    </body>
+<html>

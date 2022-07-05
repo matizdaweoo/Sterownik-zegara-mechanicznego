@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+   <html>
+     <head>;
+       <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="icon" href="data:,">
+       <title>Zegar - Ustawienia</title>
+       <style>
+         html    { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}
+         h2      { font-size: 30px; text-decoration: underline double #4CAF50;}
+         .button { width: 200px; height: 40px; background-color: #4CAF50; border: none; color: white;
+                   text-decoration: none; font-size: 15px; margin: 2px; cursor: pointer;}
+       </style>
+     </head>
+    
+     <body> <h2>ZEGAR MECHANICZNY</h2>
+       <p></p>
+       <form action="/U1" method="post">
+         <input type="submit" value="Ustaw godzinę" class="button">
+       </form>
+       <p></p>
+       <form action="/U2" method="post">
+         <input type="submit" value="Ustaw datę" class="button">
+       </form>
+       <p></p>
+       <form action="/U3" method="post">
+         <input type="submit" value="Zresetuj zegar" class="button">
+       </form>
+       <p></p>
+       <form action="/U4" method="post">
+         <input type="submit" value="Test silnika" class="button">
+       </form>
+       <p></p>
+       <form action="/L" method="post">
+         <input type="submit" value="Powrót" class="button" style="width: 100px;">
+       </form>
+     </body>
+   </html>
